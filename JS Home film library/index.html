@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>14.7 Практическая работа</title>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</head>
+
+<body>
+  <form class="film-form">
+    <label for="title">
+      <span>Название:</span>
+      <input type="text" id="title" name="title" placeholder="Побег из Шоушенка">
+    </label>
+    <label for="genre">
+      <span>Жанр:</span>
+      <input type="text" id="genre" name="genre" placeholder="Драма">
+    </label>
+    <label for="releaseYear">
+      <span>Год:</span>
+      <input type="number" id="releaseYear" name="releaseYear" placeholder="1994">
+    </label>
+    <label class="checkbox-label" for="isWatched">
+      <span>Успели посмотреть?</span>
+      <input type="checkbox" id="isWatched" name="isWatched">
+    </label>
+    <button class="btn btn--active" id="add-btn" type="submit">Добавить</button>
+    <button class="btn" id="refresh-btn" type="button">Обновить</button>
+    <button class="btn" id="cancel-btn" type="button">Отменить редактирование</button>
+  </form>
+  <div class="sort">
+    <select name="sort__select" id="sort-select">
+      <option value="1">Название (А-Я)</option>
+      <option value="2">Название (Я-А)</option>
+      <option value="3">Жанр</option>
+      <option value="4">Год ↑</option>
+      <option value="5">Год ↓</option>
+      <option value="6">Успели посмотреть?</option>
+    </select>
+    <button class="sort__button" type="button">Сортировать</button>
+  </div>
+  <table class="film-table">
+    <thead>
+      <tr>
+        <th>Название</th>
+        <th>Жанр</th>
+        <th>Год</th>
+        <th>Успели посмотреть?</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody class="film-tbody">
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
