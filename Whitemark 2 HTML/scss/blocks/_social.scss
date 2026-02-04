@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 25px;
+
+  &__link {
+    display: flex;
+    width: 24px;
+    height: 20px;
+    color: $color-white;
+    opacity: 0.3;
+    transition: opacity $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 20px;
+  }
+}

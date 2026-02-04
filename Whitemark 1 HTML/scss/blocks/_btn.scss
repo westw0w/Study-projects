@@ -1,0 +1,44 @@
+.btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-blue-charcoa;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+
+  &:disabled {
+    pointer-events: none;
+    color: $color-mischka;
+  }
+
+  &--first {
+    padding: 8px 16px;
+    background-color: $color-ecru-white;
+    border-radius: 60px;
+    letter-spacing: 0.003em;
+
+    @include vp-1023 {
+      width: max-content;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &--second {
+    gap: 10px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

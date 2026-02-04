@@ -1,0 +1,128 @@
+.header {
+  padding: 11px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  @include vp-767 {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0 25px;
+    max-width: 1440px;
+
+    @include vp-1023 {
+      padding: 0 20px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 210px 1fr;
+    gap: 30px;
+    align-items: center;
+
+    @include vp-1023 {
+      grid-template-columns: 1fr 150px 1fr;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr 130px 1fr;
+    }
+  }
+
+  &__burger {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: opacity $transition-300;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.5;
+    }
+
+    @include vp-767 {
+      height: 15px;
+      width: 30px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+
+    svg {
+      height: 58px;
+      width: 210px;
+    }
+  }
+
+  &__user {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__link {
+    width: 182px;
+
+    @include vp-1023 {
+      width: 160px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    font-family: $ff-secondary;
+    line-height: 21.6px;
+    font-size: 16px;
+    color: $color-white;
+    transition: opacity $transition-300;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.5;
+    }
+  }
+
+  &__phone-text {
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &__phone-icon {
+    display: none;
+
+    @media (max-width: 1280px) {
+      display: flex;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}

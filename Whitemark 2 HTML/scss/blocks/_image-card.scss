@@ -1,0 +1,57 @@
+.image-card {
+  position: relative;
+  min-height: 407px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+  flex-direction: column;
+  color: $color-white;
+
+  @include vp-1023 {
+    min-height: 340px;
+  }
+
+  @include vp-767 {
+    min-height: 265px;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__number {
+    font-family: $ff-secondary;
+    font-size: 70px;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  &__number-size {
+    font-size: 16px;
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.35;
+    max-width: 305px;
+    margin: -12px auto 0;
+    text-align: center;
+
+    @include vp-767 {
+      max-width: 250px;
+    }
+  }
+}

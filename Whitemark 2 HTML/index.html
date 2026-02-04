@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="fonts/Arsenal-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Тихий зелёный элитный архитектурный проект на Тишинке. - Тишинский бульвар</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <button class="header__burger" type="button" aria-label="Открыть меню">
+          <svg class="header__burger-icon" width="40" height="15" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <a href="#" class="header__logo" aria-label="Ссылка на главную страницу">
+          <svg class="header__burger-icon" width="210" height="58" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="header__user">
+          <a class="header__link btn" href="#">Выбрать квартиру</a>
+          <a href="tel:+74951829699" class="header__phone" aria-label="Позвонить">
+            <span class="header__phone-text">+7 (495) 182-96-99</span>
+            <svg class="header__phone-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__picture">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="images/hero/hero-mobile.webp 1x, images/hero/hero-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="images/hero/hero.webp 1x, images/hero/hero@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="images/hero/hero-mobile.jpg 1x, images/hero/hero-mobile@2x.jpg 2x">
+              <img class="hero__img" src="images/hero/hero.jpg" srcset="images/hero/hero@2x.jpg 2x" width="1440"
+                height="720" alt="Изображение ЖК Тишинский">
+            </picture>
+          </div>
+          <h1 class="hero__title">
+            <span class="hero__title-top">ТИХИЙ</span>
+            <span class="hero__title-middle">ЗЕЛЕНЫЙ</span>
+            <span class="hero__title-bottom">ЭЛИТНЫЙ</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества ЖК Тишинский</h2>
+        <p class="advantages__description">Элитный квартал «Тишинский бульвар» с просторным зелёным двором-парком
+          располагается в тихом историческом центре Москвы, в окружении уютных улочек с их камерной спокойной
+          атмосферой. Он сочетает в себе привилегии жизни в центре города, красоту рукотворного парка и продуманное
+          содержание</p>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">тихий старомосковский район</li>
+            <li class="advantages__item">приватный двор-парк площадью 2,1 гектара</li>
+            <li class="advantages__item">самый длинный прогулочный бульвар и три приватных двора</li>
+            <li class="advantages__item">14 неповторяющихся домов</li>
+            <li class="advantages__item">редкие форматы квартир — двухэтажные со вторым светом, high level с увеличенной
+              до 8,25 метра высотой потолков, пентхаусы с террасой и камином</li>
+          </ul>
+          <div class="advantages__inner">
+            <p class="advantages__text">Clubhouse – уникальный формат инфраструктурного центра только для жителей –
+              открывает безграничные возможности для общения, спорта и детского развития:</p>
+            <ul class="advantages__list">
+              <li class="advantages__item">фитнес с 25-метровым бассейном и зоной спа </li>
+              <li class="advantages__item">детская игровая комната для маленьких жителей</li>
+              <li class="advantages__item">соседский центр с летней террасой для отдыха и общения</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="advantages__picture">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="images/advantages/advantages-mobile.webp 1x, images/advantages/advantages-mobile@2x.webp 2x">
+          <source type="image/webp"
+            srcset="images/advantages/advantages.webp 1x, images/advantages/advantages@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="images/advantages/advantages-mobile.png 1x, images/advantages/advantages-mobile@2x.png 2x">
+          <img class="advantages__img" src="images/advantages/advantages.png"
+            srcset="images/advantages/advantages@2x.png 2x" height="970" width="1440" alt="Изображение ЖК Тишинский"
+            loading="lazy">
+        </picture>
+      </div>
+    </section>
+    <section class="respectability">
+      <svg class="respectability__decor" width="378" height="1168" aria-hidden="true">
+        <use xlink:href="images/sprite.svg#icon-decor-1"></use>
+      </svg>
+      <div class="container">
+        <div class="respectability__wrapper">
+          <h2 class="respectability__title">Респектабельность и тишина старой Москвы </h2>
+          <p class="respectability__description">Тишинка — статусный район в центре Москвы, сохранивший
+            атмосферу исторического места и богатое архитектурное наследие. Вокруг тихие старомосковские переулки с их
+            уникальным архитектурным наследием. Рядом расположены городские точки притяжения и гастрономические локации.
+          </p>
+          <div class="respectability__video-box">
+            <video class="respectability__video" src="video/video-preview.mp4" width="1280" height="670" autoplay
+              loop></video>
+            <button class="respectability__video-play" type="button">
+              <svg class="respectability__video-icon" width="20" height="25" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-play"></use>
+              </svg>
+              <span class="respectability__video-text">Смотреть видео</span>
+            </button>
+          </div>
+          <h2 class="respectability__subtitle">Знаковое окружение</h2>
+          <ul class="respectability__list">
+            <li class="respectability__item">
+              <div class="image-card">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/respectability/respectability-1-mobile.webp 1x, images/respectability/respectability-1-mobile@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="images/respectability/respectability-1.webp 1x, images/respectability/respectability-1@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="images/respectability/respectability-1-mobile.jpg 1x, images/respectability/respectability-1-mobile@2x.jpg 2x">
+                  <img class="image-card__img" src="images/respectability/respectability-1.jpg"
+                    srcset="images/respectability/respectability-1@2x.jpg 2x" height="407" width="408"
+                    alt="Изображение здания" loading="lazy">
+                </picture>
+                <span class="image-card__number">400<span class="image-card__number-size">м</span></span>
+                <p class="image-card__text">Сквер на Тишинской площади — историческая доминанта района</p>
+              </div>
+            </li>
+            <li class="respectability__item">
+              <div class="image-card">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/respectability/respectability-2-mobile.webp 1x, images/respectability/respectability-2-mobile@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="images/respectability/respectability-2.webp 1x, images/respectability/respectability-2@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="images/respectability/respectability-2-mobile.jpg 1x, images/respectability/respectability-2-mobile@2x.jpg 2x">
+                  <img class="image-card__img" src="images/respectability/respectability-2.jpg"
+                    srcset="images/respectability/respectability-2@2x.jpg 2x" height="407" width="408"
+                    alt="Изображение здания" loading="lazy">
+                </picture>
+                <span class="image-card__number">450<span class="image-card__number-size">м</span></span>
+                <p class="image-card__text">Римско-католический кафедральный собор – архитектурный акцент локации</p>
+              </div>
+            </li>
+            <li class="respectability__item">
+              <div class="image-card">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/respectability/respectability-3-mobile.webp 1x, images/respectability/respectability-3-mobile@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="images/respectability/respectability-3.webp 1x, images/respectability/respectability-3@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="images/respectability/respectability-3-mobile.jpg 1x, images/respectability/respectability-3-mobile@2x.jpg 2x">
+                  <img class="image-card__img" src="images/respectability/respectability-3.jpg"
+                    srcset="images/respectability/respectability-3@2x.jpg 2x" height="407" width="408"
+                    alt="Изображение здания" loading="lazy">
+                </picture>
+                <span class="image-card__number">600<span class="image-card__number-size">м</span></span>
+                <p class="image-card__text">Центр «Зотов» — культурное пространство и памятник конструктивизма</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="unique">
+      <div class="container">
+        <div class="unique__wrapper">
+          <h2 class="unique__title">Уникальный бульвар в&nbsp;огромном дворе-парке </h2>
+          <span class="unique__subtitle"><span class="unique__subtitle-number">3</span> двора</span>
+          <div class="unique__gallery">
+            <svg class="unique__decor-top" width="366" height="366" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-unique-decor-1"></use>
+            </svg>
+            <svg class="unique__decor-middle" width="695" height="984" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-unique-decor-2"></use>
+            </svg>
+            <div class="unique__gallery-pic">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/unique/unique-1-mobile.webp 1x, images/unique/unique-1-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="images/unique/unique-1.webp 1x, images/unique/unique-1@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="images/unique/unique-1-mobile.jpg 1x, images/unique/unique-1-mobile@2x.jpg 2x">
+                <img class="unique__img" src="images/unique/unique-1.jpg" srcset="images/unique/unique-1@2x.jpg 2x"
+                  width="923" height="640" alt="Изображение парка" loading="lazy">
+              </picture>
+            </div>
+            <ul class="unique__gallery-list">
+              <li class="unique__gallery-item">
+                <button class="unique__gallery-button unique__gallery-button--active" type="button">
+                  <svg class="unique__gallery-icon" width="135" height="132" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-unique-1"></use>
+                  </svg>
+                  <span class="unique__gallery-text">рябиновый двор</span>
+                </button>
+              </li>
+              <li class="unique__gallery-item">
+                <button class="unique__gallery-button unique__gallery-button--yellow" type="button">
+                  <svg class="unique__gallery-icon" width="135" height="132" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-unique-2"></use>
+                  </svg>
+                  <span class="unique__gallery-text">кленовый двор</span>
+                </button>
+              </li>
+              <li class="unique__gallery-item">
+                <button class="unique__gallery-button unique__gallery-button--green" type="button">
+                  <svg class="unique__gallery-icon" width="135" height="132" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-unique-3"></use>
+                  </svg>
+                  <span class="unique__gallery-text">ивовый двор</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <span class="unique__heading">КВАРТАЛ, ГДЕ ЕСТЬ ВСЕ</span>
+          <div class="unique__inner">
+            <span class="unique__note">Clubhouse только для резидентов</span>
+            <p class="unique__text">Элитный квартал «Тишинский бульвар» обладает насыщенной инфраструктурой — только для
+              жителей.
+              <span class="unique__text unique__text--green">В эксклюзивном Clubhouse собраны все необходимые
+                пространства для отдыха и общения, занятий спортом, детских игр и праздников.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="architecture">
+      <svg class="architecture__decor" width="824" height="802" aria-hidden="true">
+        <use xlink:href="images/sprite.svg#icon-decor-2"></use>
+      </svg>
+      <div class="container">
+        <div class="architecture__wrapper">
+          <h2 class="architecture__title">Архитектура контрастной москвы</h2>
+          <div class="architecture__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="images/architecture/architecture-mobile.webp 1x, images/architecture/architecture-mobile@2x.webp 2x">
+              <source type="image/webp"
+                srcset="images/architecture/architecture.webp 1x, images/architecture/architecture@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="images/architecture/architecture-mobile.jpg 1x, images/architecture/architecture-mobile@2x.jpg 2x">
+              <img class="architecture__img" src="images/architecture/architecture.jpg"
+                srcset="images/architecture/architecture@2x.jpg 2x" height="731" width="1440"
+                alt="Изображение архитектуры Москвы" loading="lazy">
+            </picture>
+          </div>
+          <ul class="architecture__list">
+            <li class="architecture__item">
+              <span class="architecture__number">3</span>
+              <p class="architecture__item-text">уютных двора, в каждом из которых от трёх до шести домов</p>
+            </li>
+            <li class="architecture__item">
+              <span class="architecture__number">6-24</span>
+              <p class="architecture__item-text">этажей составляет высота домов</p>
+            </li>
+            <li class="architecture__item">
+              <span class="architecture__number">14</span>
+              <p class="architecture__item-text">неповторяющихся фасадов из премиальных материалов</p>
+            </li>
+          </ul>
+          <p class="architecture__text">Ансамбль домов построен на контрастном сочетании оттенков, материалов и фактур.
+            <span class="architecture__text architecture__text--green">Каждый фасад хочется рассматривать в деталях.
+              Благодаря этому квартал деликатно вписывается в архитектурную ткань района.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="children-info">
+      <div class="container">
+        <div class="children-info__wrapper">
+          <h2 class="children-info__title">На радость детям</h2>
+          <p class="children-info__text">На территории элитного квартала создана экосистема для детей всех возрастов с
+            учётом самых разных сценариев жизни — от ежедневных прогулок до занятий спортом и обучения. </p>
+        </div>
+        <div class="children-info__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="images/children/children-mobile.webp 1x, images/children/children-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="images/children/children.webp 1x, images/children/children@2x.webp 2x">
+            <source media="(max-width: 767px)"
+              srcset="images/children/children-mobile.jpg 1x, images/children/children-mobile@2x.jpg 2x">
+            <img class="children-info__img" src="images/children/children.jpg"
+              srcset="images/children/children@2x.jpg 2x" height="800" width="1440" alt="Изображение детской площадки"
+              loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="elite-promo">
+      <div class="container">
+        <div class="elite-promo__wrapper">
+          <h2 class="elite-promo__title">Элитные квартиры редкого формата</h2>
+          <div class="elite-promo__inner">
+            <div class="elite-promo__image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/elite/elite-mobile.webp 1x, images/elite/elite-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="images/elite/elite.webp 1x, images/elite/elite@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="images/elite/elite-mobile.jpg 1x, images/elite/elite-mobile@2x.jpg 2x">
+                <img class="elite-promo__img" src="images/elite/elite.jpg" srcset="images/elite/elite@2x.jpg 2x"
+                  height="913" width="1440" alt="Фотография квартиры" loading="lazy">
+              </picture>
+            </div>
+            <div class="elite-promo__wrap">
+              <h3 class="elite-promo__heading">ххх</h3>
+              <p class="elite-promo__text">вариантов планировочных решений, продуманных до мелочей</p>
+            </div>
+          </div>
+          <h2 class="elite-promo__subtitle">Оставьте заявку</h2>
+          <form action="#" method="post" class="elite-promo__form">
+            <div class="elite-promo__box">
+              <div class="custom-input elite-promo__input">
+                <input type="text" class="custom-input__field" id="elite-promo-name" aria-label="Введите свое имя"
+                  placeholder="Ваше имя" required>
+                <span class="custom-input__error">Данное поле должно быть заполнено</span>
+              </div>
+              <div class="custom-input elite-promo__input">
+                <input type="tel" class="custom-input__field" id="elite-promo-phone" aria-label="Введите свой телефон"
+                  placeholder="Телефон" required>
+                <span class="custom-input__error">Данное поле должно быть заполнено</span>
+              </div>
+              <button class="elite-promo__btn" type="submit" disabled>Отправить</button>
+            </div>
+            <div class="custom-checkbox elite-promo__checkbox">
+              <input class="visually-hidden custom-checkbox__field" type="checkbox" id="agree" name="form-agree">
+              <label class="custom-checkbox__label" for="agree">Соглашаюсь на обработку персональных данных</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="next">
+      <div class="container">
+        <a href="#" class="next__shadow-link" aria-label="Перейти на следующую страницу"></a>
+        <div class="next__wrapper">
+          <span class="next__name">Следующая страница</span>
+          <h2 class="next__title">выбрать квартиру</h2>
+          <svg class="next__icon" width="182" height="27" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-arrow-next"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="next__image">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="images/next/appartment-mobile.webp 1x, images/next/appartment-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="images/next/appartment.webp 1x, images/next/appartment@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="images/next/appartment-mobile.jpg 1x, images/next/appartment-mobile@2x.jpg 2x">
+          <img class="next__img" src="images/next/appartment.jpg" srcset="images/next/appartment@2x.jpg 2x" height="400"
+            width="1440" alt="Фотография квартиры" loading="lazy">
+        </picture>
+      </div>
+      <svg class="next__decor" width="1439" height="13" viewBox="0 0 1439 13" fill="none"
+        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <rect x="-5.99774" y="0.202148" width="144.6" height="12" fill="#6C6A75" />
+        <rect x="138.602" y="0.202148" width="61.2543" height="12" fill="#888080" />
+        <rect x="199.858" y="0.202148" width="310.288" height="12" fill="#D0E4BB" />
+        <rect x="510.145" y="0.202148" width="221.921" height="12" fill="#008380" />
+        <rect x="732.067" y="0.202148" width="103.429" height="12" fill="#CE8E35" />
+        <rect x="835.496" y="0.202148" width="130.542" height="12" fill="#997926" />
+        <rect x="966.037" y="0.202148" width="130.542" height="12" fill="#436E78" />
+        <rect x="1096.58" y="0.202148" width="157.655" height="12" fill="#3299CC" />
+        <rect x="1254.24" y="0.202148" width="184.767" height="12" fill="#41C3F1" />
+      </svg>
+      <svg class="next__decor next__decor--mobile" width="360" height="5" viewBox="0 0 360 5" fill="none"
+        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <rect y="0.00146484" width="36.025" height="5" fill="#6C6A75" />
+        <rect x="36.0253" y="0.00146484" width="15.2606" height="5" fill="#888080" />
+        <rect x="51.285" y="0.00146484" width="77.3037" height="5" fill="#D0E4BB" />
+        <rect x="128.589" y="0.00146484" width="55.2884" height="5" fill="#008380" />
+        <rect x="183.878" y="0.00146484" width="25.7679" height="5" fill="#CE8E35" />
+        <rect x="209.646" y="0.00146484" width="32.5226" height="5" fill="#997926" />
+        <rect x="242.168" y="0.00146484" width="32.5226" height="5" fill="#436E78" />
+        <rect x="274.69" y="0.00146484" width="39.2773" height="5" fill="#3299CC" />
+        <rect x="313.968" y="0.00146484" width="46.032" height="5" fill="#41C3F1" />
+      </svg>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__col">
+          <span class="footer__chapter">Офис продаж</span>
+          <span class="footer__link-text">Средний Тишинский переулок, д. 5</span>
+          <a class="footer__link" href="#">Построить маршрут</a>
+        </div>
+        <div class="footer__main">
+          <a class="footer__main-phone" href="tel:+74951274072">+7 (495) 127-40-72</a>
+          <a class="footer__main-link" href="mailto:info@sminex.com">info@sminex.com</a>
+        </div>
+        <div class="footer__col footer__col--right">
+          <span class="footer__chapter">Контакты</span>
+          <a class="footer__link-text footer__link-text--mobile-dn" href="tel:+74951042600">+7 (495) 104-26-00</a>
+          <a class="footer__link footer__link--mobile-dn" href="mailto:info@sminex.com">info@sminex.com</a>
+        </div>
+      </div>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Написать в WhatsUp">
+            <svg class="social__icon" width="24" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Перейти на ВКонтакте">
+            <svg class="social__icon" width="24" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Перейти на youtube">
+            <svg class="social__icon" width="24" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Написать в Телеграм">
+            <svg class="social__icon" width="24" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-tg"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Перейти в дзен">
+            <svg class="social__icon" width="24" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-dzen"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__item-link">Документы</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__item-link">Условия покупки</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__item-link">Правовая информация</a>
+        </li>
+      </ul>
+      <div class="footer__bottom">
+        <a class="footer__logo footer__logo--mobile" href="#" aria-label="Перейти на главную страницу">
+          <svg class="footer__logo-icon" width="82" height="19" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-sminex-2"></use>
+          </svg>
+        </a>
+        <p class="footer__note-text">Содержание настоящего сайта LifaTime.ru, включая любую информацию и результаты
+          интеллектуальной деятельности, принадлежит ООО «БАЗАЛЬТ» (ИНН 7705739315) и защищено законодательством
+          Российской Федерации и международными соглашениями. Любое использование, копирование, воспроизведение или
+          распространение любой размещённой на настоящем сайте информации, материалов и/или их частей не допускается без
+          предварительного получения согласия правообладателя. Сайт носит исключительно информационный характер и ни при
+          каких условиях не является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса
+          Российской Федерации.</p>
+        <div class="footer__box">
+          <a class="footer__whitemark" href="#" aria-label="Перейти на сайт Whitemark">
+            <svg class="footer__whitemark-icon" width="103" height="16" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-whitemark"></use>
+            </svg>
+          </a>
+          <a class="footer__logo" href="#" aria-label="Перейти на главную страницу">
+            <svg class="footer__logo-icon" width="95" height="22" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-sminex"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

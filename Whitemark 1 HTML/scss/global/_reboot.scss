@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-white;
+  color: $color-black;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  font-family: $ff-imb-plex;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+main {
+  flex-grow: 1;
+  padding: 80px 0 0;
+
+  @include vp-1023 {
+    padding: 58px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 60px 0 0;
+  }
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+}

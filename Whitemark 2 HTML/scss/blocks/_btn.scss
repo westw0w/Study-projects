@@ -1,0 +1,28 @@
+.btn {
+  background-color: $color-ottoman;
+  border: 1px solid transparent;
+  color: $color-jaguar;
+  padding: 15px;
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-family: $ff-secondary;
+  outline: none;
+  transition: background-color $transition-300, color $transition-300;
+  position: relative;
+
+  &:hover, 
+  &:focus-visible {
+    color: $color-white;
+    background-color: $color-deep-teal;
+  }
+
+  @include vp-1023 {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,166 @@
+.elite-promo {
+  background-color: $color-linen;
+  padding: 0 0 80px;
+  margin-top: -1px;
+
+  @include vp-767 {
+    padding: 0 0 52px;
+  }
+
+  &__title {
+    font-size: 70px;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    margin: 0 auto 36px;
+    text-align: center;
+    max-width: 715px;
+    text-transform: uppercase;
+    font-family: $ff-secondary;
+    font-weight: 400;
+
+    @include vp-767 {
+      font-size: 36px;
+      margin: 0 auto 28px;
+    }
+  }
+
+  &__inner {
+    padding: 150px 0 340px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 77px 0;
+
+    @include vp-767 {
+      padding: 0;
+      margin: 0 0 50px 0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+
+    @include vp-767 {
+      position: relative;
+      margin: 0 0 31px 0;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+
+    @include vp-767 {
+      height: 320px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    padding: 0 0 0 120px;
+
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
+  &__heading {
+    font-size: 130px;
+    line-height: 1;
+    font-family: $ff-secondary;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.035em;
+
+    @include vp-767 {
+      font-size: 70px;
+      margin: 0 0 5px 0;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    text-transform: uppercase;
+    max-width: 274px;
+
+    @include vp-767 {
+      font-size: 16px;
+      max-width: 286px;
+      text-transform: lowercase;
+    }
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 30px 0;
+
+    @include vp-767 {
+      font-size: 20px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 15px;
+    margin: 0 0 25px 0;
+
+    @include vp-1023 {
+      grid-template-columns: 1fr;
+    }
+
+    @include vp-767 {
+      gap: 12px;
+      margin: 0 0 14px 0;
+    }
+  }
+
+  &__btn {
+    height: 56px;
+    width: 100%;
+    border: 1px solid $color-jaguar;
+    background-color: transparent;
+    border-radius: 200px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 17px;
+    line-height: 1.5;
+    color: $color-jaguar;
+    transition: color $transition-300, border-color $transition-300;
+
+    &:disabled {
+      pointer-events: none;
+      color: rgba($color-jaguar, 0.5);
+      border-color: rgba($color-jaguar, 0.5);
+    }
+
+    &:not(:disabled):hover,
+    &:not(:disabled):focus-visible {
+      border-color: $color-fuel-yellow;
+      color: $color-fuel-yellow;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: center;
+  }
+}

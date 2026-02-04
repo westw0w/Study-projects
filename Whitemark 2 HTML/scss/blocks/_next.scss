@@ -1,0 +1,116 @@
+.next {
+  padding: 125px 0 118px;
+  position: relative;
+  $root: &;
+
+  @include vp-767 {
+    padding: 160px 0 141px;
+  }
+
+  &__shadow-link {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover,
+    &:focus-visible {
+      + #{$root}__wrapper {
+        #{$root}__icon {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+        #{$root}__title {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__name {
+    font-family: $ff-secondary;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: $color-white;
+
+    @include vp-767 {
+      font-size: 14px;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__title {
+    font-family: $ff-secondary;
+    color: $color-ottoman;
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 0 0 35px 0;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    transition: transform $transition-300;
+
+    @include vp-767 {
+      font-size: 30px;
+      margin: 0 0 15px 0;
+      color: $color-white;
+    }
+  }
+
+  &__icon {
+    height: 27px;
+    width: 182px;
+    transition: clip-path $transition-300;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+    @include vp-767 {
+      height: 25px;
+      width: 130px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__decor {
+    margin: 0 0 -1px 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include vp-767 {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include vp-767 {
+        display: flex;
+      }
+    }
+  }
+}

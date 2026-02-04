@@ -1,0 +1,102 @@
+.income {
+  margin: 0 0 60px 0;
+
+  @include vp-768 {
+    padding-top: 16px;
+  }
+
+  @include vp-1024 {
+    padding-top: 21px;
+    margin: 0 0 100px 0;
+  }
+
+  @include vp-1304 {
+    margin: 0 0 120px 0;
+  }
+
+  &__banner {
+    position: relative;
+    padding: 16px 20px;
+    background: $color-alice-blue;
+    border-radius: 16px;
+
+    @include vp-768 {
+      padding: 25px 24px;
+    }
+
+    @include vp-1024 {
+      padding: 48px 0 48px 100px;
+    }
+
+    @include vp-1304 {
+      padding: 48px 0 48px 120px;
+    }
+  }
+
+  &__inner {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include vp-768 {
+      max-width: 480px;
+    }
+
+    @include vp-1024 {
+      min-width: 520px;
+    }
+
+    @include vp-1304 {
+      min-width: 640px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    @include vp-1024 {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include vp-1024 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (min-width: 450px) {
+      right: 20px;
+    }
+
+    @include vp-768 {
+      right: 40px;
+      top: auto;
+      transform: translateY(0);
+      bottom: 0;
+    }
+
+    @include vp-1304 {
+      right: 184px;
+    }
+  }
+}

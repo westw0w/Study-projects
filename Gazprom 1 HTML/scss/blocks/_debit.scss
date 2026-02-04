@@ -1,0 +1,108 @@
+.debit {
+  position: relative;
+  margin: 0 0 60px 0;
+
+  @include vp-1024 {
+    margin: 0 0 100px 0;
+  }
+
+  @include vp-1304 {
+    margin: 0 0 120px 0;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px 0;
+
+    &::after {
+      @include vp-1024 {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 41px;
+        width: 100%;
+        border: 2px solid #476BF0;
+        z-index: -1;
+      }
+    }
+
+    @include vp-768 {
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: -0.01em;
+    }
+
+    @include vp-1024 {
+      display: flex;
+      font-size: 40px;
+      line-height: 44px;
+      text-align: center;
+      max-width: 736px;
+      margin: 0 auto 20px;
+      letter-spacing: -0.03em;
+      background-color: $color-white;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-storm-grey-1;
+    margin: 0 0 28px 0;
+
+    @include vp-768 {
+      letter-spacing: 0.01em;
+      margin: 0 0 32px 0;
+    }
+
+    @include vp-1024 {
+      text-align: center;
+      max-width: 696px;
+      margin: 0 auto 60px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @include vp-1304 {
+      margin: 0 auto 80px;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+
+    @media (min-width: 570px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include vp-768 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    @include vp-1024 {
+      gap: 60px 25px;
+    }
+  }
+
+  &__item {
+    min-height: 200px;
+
+    @include vp-768 {
+      min-height: 280px;
+    }
+
+    @include vp-1024 {
+      min-height: 200px;
+    }
+  }
+}

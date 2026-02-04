@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="fonts/Unbounded-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Unbounded-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Unbounded-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Блог - Газпромбанк.Тех</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#" aria-label="Ссылка на главную страницу">
+          <svg class="header__logo-icon" width="354" height="19" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo-header"></use>
+          </svg>
+        </a>
+        <button class="header__burger burger" aria-label="Открыть меню">
+          <svg width="32" height="32" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Вакансии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">события</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="#">блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">стартапам</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">digital start</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__social">
+          <li class="header__social-item">
+            <a class="header__social-link" href="#" aria-label="Ссылка на VK">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="blog-hero">
+      <div class="container">
+        <div class="blog-hero__wrapper">
+          <h1 class="blog-hero__title">Блог</h1>
+          <p class="blog-hero__description">Узнай, как мы&nbsp;запускаем и&nbsp;развиваем IT-продукты
+            в&nbsp;Газпромбанке. Знакомься с
+            последними новостями из&nbsp;мира финтеха.</p>
+        </div>
+      </div>
+    </section>
+    <section class="blog-filter">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <div class="container">
+        <form class="blog-filter__form" action="#" method="GET">
+          <ul class="blog-filter__list">
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox1"
+                  name="blog-checkbox1" checked>
+                <label for="blog-checkbox1" class="custom-checkbox__label">ВСЕ</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox2"
+                  name="blog-checkbox2">
+                <label for="blog-checkbox2" class="custom-checkbox__label">DevOps</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox3"
+                  name="blog-checkbox3">
+                <label for="blog-checkbox3" class="custom-checkbox__label">UX</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox4"
+                  name="blog-checkbox4">
+                <label for="blog-checkbox4" class="custom-checkbox__label">Анализ данных</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox5"
+                  name="blog-checkbox5">
+                <label for="blog-checkbox5" class="custom-checkbox__label">Архитектура</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox6"
+                  name="blog-checkbox6">
+                <label for="blog-checkbox6" class="custom-checkbox__label">Геймификация</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox7"
+                  name="blog-checkbox7">
+                <label for="blog-checkbox7" class="custom-checkbox__label">ДБО</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox8"
+                  name="blog-checkbox8">
+                <label for="blog-checkbox8" class="custom-checkbox__label">Дизайн</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox9"
+                  name="blog-checkbox9">
+                <label for="blog-checkbox9" class="custom-checkbox__label">Инновации</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox10"
+                  name="blog-checkbox10">
+                <label for="blog-checkbox10" class="custom-checkbox__label">Исследования</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox11"
+                  name="blog-checkbox11">
+                <label for="blog-checkbox11" class="custom-checkbox__label">Карьера</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox12"
+                  name="blog-checkbox12">
+                <label for="blog-checkbox12" class="custom-checkbox__label">Маркетинг</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox13"
+                  name="blog-checkbox13">
+                <label for="blog-checkbox13" class="custom-checkbox__label">Менеджмент</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox14"
+                  name="blog-checkbox14">
+                <label for="blog-checkbox14" class="custom-checkbox__label">Отчет</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox15"
+                  name="blog-checkbox15">
+                <label for="blog-checkbox15" class="custom-checkbox__label">Поддержка</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox16"
+                  name="blog-checkbox16">
+                <label for="blog-checkbox16" class="custom-checkbox__label">Продвижение</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox17"
+                  name="blog-checkbox17">
+                <label for="blog-checkbox17" class="custom-checkbox__label">Разработка</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox18"
+                  name="blog-checkbox18">
+                <label for="blog-checkbox18" class="custom-checkbox__label">Сервисы</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox19"
+                  name="blog-checkbox19">
+                <label for="blog-checkbox19" class="custom-checkbox__label">Системы</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox20"
+                  name="blog-checkbox20">
+                <label for="blog-checkbox20" class="custom-checkbox__label">Событие</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox21"
+                  name="blog-checkbox21">
+                <label for="blog-checkbox21" class="custom-checkbox__label">Тестирование</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox22"
+                  name="blog-checkbox22">
+                <label for="blog-checkbox22" class="custom-checkbox__label">Технологии</label>
+              </div>
+            </li>
+            <li class="blog-filter__item">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="blog-checkbox23"
+                  name="blog-checkbox23">
+                <label for="blog-checkbox23" class="custom-checkbox__label">Финтех</label>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+    <section class="blog-list">
+      <h2 class="visually-hidden">Публикации</h2>
+      <div class="container">
+        <ul class="blog-list__grid">
+          <li class="blog-list__item">
+            <div class="blog-card">
+              <a class="blog-card__link" href="#" aria-label="Ссылка на блог"></a>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-1.webp 1x, images/blog-img-mob-1@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-1.webp 1x, images/blog-img-tablet-1@2x.webp 2x">
+                <source type="image/webp" srcset="images/blog-img-1.webp 1x, images/blog-img-1@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-1.png 1x, images/blog-img-mob-1@2x.png 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-1.png 1x, images/blog-img-tablet-1@2x.png 2x">
+                <img class="blog-card__img" src="images/blog-img-1.png" srcset="images/blog-img-1@2x.png 2x" width="228"
+                  height="228" alt="Иллюстрация к карточке">
+              </picture>
+              <ul class="blog-card__tags">
+                <li class="blog-card__tag">Карьера</li>
+                <li class="blog-card__tag">Разработка</li>
+              </ul>
+              <div class="blog-card__content">
+                <p class="blog-card__date">14/06/2024</p>
+                <p class="blog-card__title">Kubernetes: шпаргалка для собеседования. Часть 1</p>
+              </div>
+            </div>
+          </li>
+          <li class="blog-list__item blog-list__item--top">
+            <div class="blog-card blog-card--top">
+              <a class="blog-card__link" href="#" aria-label="Ссылка на блог"></a>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-2.webp 1x, images/blog-img-mob-2@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-2.webp 1x, images/blog-img-tablet-2@2x.webp 2x">
+                <source type="image/webp" srcset="images/blog-img-2.webp 1x, images/blog-img-2@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-2.png 1x, images/blog-img-mob-2@2x.png 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-2.png 1x, images/blog-img-tablet-2@2x.png 2x">
+                <img class="blog-card__img" src="images/blog-img-2.png" srcset="images/blog-img-2@2x.png 2x" width="228"
+                  height="228" alt="Иллюстрация к карточке">
+              </picture>
+              <ul class="blog-card__tags">
+                <li class="blog-card__tag">Карьера</li>
+                <li class="blog-card__tag">Разработка</li>
+              </ul>
+              <div class="blog-card__content">
+                <p class="blog-card__date">03/06/2024</p>
+                <p class="blog-card__title">С завода в ИТ: почему менять карьерный трек никогда не
+                  поздно</p>
+              </div>
+            </div>
+          </li>
+          <li class="blog-list__item">
+            <div class="blog-card">
+              <a class="blog-card__link" href="/article.html" aria-label="Ссылка на блог"></a>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-3.webp 1x, images/blog-img-mob-3@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-3.webp 1x, images/blog-img-tablet-3@2x.webp 2x">
+                <source type="image/webp" srcset="images/blog-img-3.webp 1x, images/blog-img-3@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-3.png 1x, images/blog-img-mob-3@2x.png 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-3.png 1x, images/blog-img-tablet-3@2x.png 2x">
+                <img class="blog-card__img" src="images/blog-img-3.png" srcset="images/blog-img-3@2x.png 2x" width="228"
+                  height="228" alt="Иллюстрация к карточке">
+              </picture>
+              <ul class="blog-card__tags">
+                <li class="blog-card__tag">Карьера</li>
+              </ul>
+              <div class="blog-card__content">
+                <p class="blog-card__date">27/05/2024</p>
+                <p class="blog-card__title">Как стать идеальным кандидатом на&nbsp;собеседовании
+                  и&nbsp;повысить
+                  шансы&nbsp;на...</p>
+              </div>
+            </div>
+          </li>
+          <li class="blog-list__item">
+            <div class="blog-card">
+              <a class="blog-card__link" href="#" aria-label="Ссылка на блог"></a>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-4.webp 1x, images/blog-img-mob-4@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-4.webp 1x, images/blog-img-tablet-4@2x.webp 2x">
+                <source type="image/webp" srcset="images/blog-img-4.webp 1x, images/blog-img-4@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-4.png 1x, images/blog-img-mob-4@2x.png 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-4.png 1x, images/blog-img-tablet-4@2x.png 2x">
+                <img class="blog-card__img" src="images/blog-img-4.png" srcset="images/blog-img-4@2x.png 2x" width="228"
+                  height="228" alt="Иллюстрация к карточке">
+              </picture>
+              <ul class="blog-card__tags">
+                <li class="blog-card__tag">Маркетинг</li>
+                <li class="blog-card__tag">Системы</li>
+              </ul>
+              <div class="blog-card__content">
+                <p class="blog-card__date">23/05/2024</p>
+                <p class="blog-card__title">Переход на&nbsp;новую платформу CRM: Газпромбанк принимает
+                  вызов</p>
+              </div>
+            </div>
+          </li>
+          <li class="blog-list__item">
+            <div class="blog-card blog-card--top">
+              <a class="blog-card__link" href="#" aria-label="Ссылка на блог"></a>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-5.webp 1x, images/blog-img-mob-5@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-5.webp 1x, images/blog-img-tablet-5@2x.webp 2x">
+                <source type="image/webp" srcset="images/blog-img-5.webp 1x, images/blog-img-5@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-5.png 1x, images/blog-img-mob-5@2x.png 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-5.png 1x, images/blog-img-tablet-5@2x.png 2x">
+                <img class="blog-card__img" src="images/blog-img-5.png" srcset="images/blog-img-5@2x.png 2x" width="228"
+                  height="228" alt="Иллюстрация к карточке">
+              </picture>
+              <ul class="blog-card__tags">
+                <li class="blog-card__tag">Маркетинг</li>
+                <li class="blog-card__tag">Системы</li>
+              </ul>
+              <div class="blog-card__content">
+                <p class="blog-card__date">16/05/2024</p>
+                <p class="blog-card__title">CRM для розницы: растет и&nbsp;меняется вместе
+                  с&nbsp;бизнесом</p>
+              </div>
+            </div>
+          </li>
+          <li class="blog-list__item">
+            <div class="blog-card">
+              <a class="blog-card__link" href="#" aria-label="Ссылка на блог"></a>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-6.webp 1x, images/blog-img-mob-6@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-6.webp 1x, images/blog-img-tablet-6@2x.webp 2x">
+                <source type="image/webp" srcset="images/blog-img-6.webp 1x, images/blog-img-6@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="images/blog-img-mob-6.png 1x, images/blog-img-mob-6@2x.png 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="images/blog-img-tablet-6.png 1x, images/blog-img-tablet-6@2x.png 2x">
+                <img class="blog-card__img" src="images/blog-img-6.png" srcset="images/blog-img-6@2x.png 2x" width="228"
+                  height="228" alt="Иллюстрация к карточке">
+              </picture>
+              <ul class="blog-card__tags">
+                <li class="blog-card__tag">Геймификация</li>
+              </ul>
+              <div class="blog-card__content">
+                <p class="blog-card__date">07/05/2024</p>
+                <p class="blog-card__title">Геймификация процессов: как в Газпромбанке создают игры для
+                  сотрудников</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="blog-list__more" type="button">Ещё публикации</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__columns">
+        <div class="footer__column">
+          <h2 class="footer__title">Напиши нам, вот&nbsp;наши контакты</h2>
+        </div>
+        <div class="footer__column">
+          <div class="footer__contacts">
+            <span class="footer__contacts-title">Почта:</span>
+            <a class="footer__contacts-link" href="mailto:space@gazprombank.ru">space @gazprombank.ru</a>
+          </div>
+          <div class="footer__contacts">
+            <span class="footer__contacts-title">Адрес:</span>
+            <a class="footer__contacts-link" href="#">Москва, ул.&nbsp;Коровий Вал, 5</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__columns">
+        <div class="footer__column">
+          <a class="footer__logo" href="#" aria-label="Ссылка на главную страницу">
+            <svg class="footer__logo-icon" width="354" height="19" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-logo-header"></use>
+            </svg>
+          </a>
+          <p class="footer__copyright">&copy;&nbsp;1990-2024, Банк ГПБ (АО) Генеральная лицензия Банка России
+            &#8470;&nbsp;354, 117420, г.
+            Москва, ул. Наметкина, д.&nbsp;16, корпус&nbsp;1. <a href="#" class="footer__copyright-link">Политика
+              обработки и
+              защиты персональных данных</a>
+          </p>
+        </div>
+        <div class="footer__column">
+          <div class="footer__navigation">
+            <div class="footer__navigation-block">
+              <a href="#" class="footer__navigation-link">Вакансии</a>
+              <a href="#" class="footer__navigation-link">События</a>
+              <a href="#" class="footer__navigation-link">Блог</a>
+            </div>
+            <div class="footer__navigation-block">
+              <a href="#" class="footer__navigation-link">Стартапам</a>
+              <a href="#" class="footer__navigation-link">Digital start</a>
+            </div>
+            <div class="footer__navigation-block">
+              <a href="#" class="footer__navigation-link">Вконтакте</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

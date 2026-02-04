@@ -1,0 +1,17 @@
+.blog-filter {
+
+  &__list {
+    border-top: 1px solid $color-black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 28px 0 0;
+
+    @include vp-1023 {
+      gap: 12px;
+      padding-top: 32px;
+    }
+  }
+}
