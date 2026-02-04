@@ -1,0 +1,6 @@
+.note-list {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 20px;
+  padding: 0 180px;
+}

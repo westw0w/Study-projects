@@ -1,0 +1,86 @@
+{
+  "982bc6f8-08e9-42bf-ac7a-2bfa63643c4c": {
+    "id": "982bc6f8-08e9-42bf-ac7a-2bfa63643c4c",
+    "title": "Новая заметка",
+    "text": "lorem ipsum dolor sit amet consectetur adipiscing elit ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1706119302723
+  },
+  "dce6f774-3ad9-4bb3-bc50-6b4ba47f4200": {
+    "id": "dce6f774-3ad9-4bb3-bc50-6b4ba47f4200",
+    "title": "Admin1",
+    "text": "Проверка отправки",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488755875
+  },
+  "763b143c-b8f4-4a72-8d04-141ce67f6dce": {
+    "id": "763b143c-b8f4-4a72-8d04-141ce67f6dce",
+    "title": "Admin2",
+    "text": "Проверка отправки",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488763656
+  },
+  "b4a87d9d-84fa-4832-bebe-625100b7bf0f": {
+    "id": "b4a87d9d-84fa-4832-bebe-625100b7bf0f",
+    "title": "Admin3",
+    "text": "Проверка отправки",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488769639
+  },
+  "e7ec7e3d-9b67-44bf-9de8-73ebceec7756": {
+    "id": "e7ec7e3d-9b67-44bf-9de8-73ebceec7756",
+    "title": "Admin4",
+    "text": "Пробный текст",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488799924
+  },
+  "44e8ab10-c52d-42d6-bb2a-391ee4ee2e8d": {
+    "id": "44e8ab10-c52d-42d6-bb2a-391ee4ee2e8d",
+    "title": "Admin5",
+    "text": "Пробный текст",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488854618
+  },
+  "6c849fa9-3816-45d5-ab85-db4902f3800d": {
+    "id": "6c849fa9-3816-45d5-ab85-db4902f3800d",
+    "title": "Admin6",
+    "text": "Пробный текст",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488857341
+  },
+  "716eedae-dc81-4146-8c01-9603b199d20f": {
+    "id": "716eedae-dc81-4146-8c01-9603b199d20f",
+    "title": "Admin7",
+    "text": "Пробный текст",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488860787
+  },
+  "4aab1c6c-0dc4-4136-bea5-dbf399f8c05b": {
+    "id": "4aab1c6c-0dc4-4136-bea5-dbf399f8c05b",
+    "title": "admin8",
+    "text": "Пробный текст",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488865492
+  },
+  "d6e165d1-b52d-45dd-89c5-2619992839a9": {
+    "id": "d6e165d1-b52d-45dd-89c5-2619992839a9",
+    "title": "admin9",
+    "text": "Пробный текст",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488868445
+  },
+  "c3964e6c-f13f-4b09-aaf8-07fef15f66b3": {
+    "id": "c3964e6c-f13f-4b09-aaf8-07fef15f66b3",
+    "title": "admin10",
+    "text": "Пробный текст",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488871927
+  },
+  "7bb9fe4c-e43d-47c2-b582-e908c78a9284": {
+    "id": "7bb9fe4c-e43d-47c2-b582-e908c78a9284",
+    "title": "Admin11",
+    "text": "Пробный текст",
+    "userId": "41a54b65-a71a-4c37-9138-87a561960575",
+    "createdAt": 1768488886135
+  }
+}

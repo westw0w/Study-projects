@@ -1,0 +1,30 @@
+.page-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-selector__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.page-selector__button:disabled {
+  opacity: 0;
+}
+
+.page-selector__page {
+  font-size: 16px;
+  font-weight: 600;
+}
